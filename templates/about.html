@@ -1,5 +1,40 @@
 {% extends 'base.html' %}    
 {% block content %}
 
-    <h1>About Page</h1>
+    <h2 class="section-heading mb-4">
+        <span class="section-heading-upper">{{ page_title }} Amstaff's</span>
+        </h2>
+    <p class="mb-3">
+        According to AKC's published breed standard which was approved June 10, 1936,
+         the "American Staffordshire Terrier should give the impression of great strength for his size,
+          a well put-together dog, muscular, but agile and graceful, keenly alive to his surroundings.
+           He should be stocky, not long-legged or racy in outline. His courage is proverbial." His head should be medium in length with a broad skull,
+            a distinct stop, and pronounced muscles in the cheek. The ears should be set high on their head and can be cropped or uncropped,
+             but the latter is preferred. Height and weight should be in proportion. A height of about 18 to 19 inches (46 to 48 cm)
+              at shoulders for the male and 17 to 18 inches (43 to 46 cm) for the female is to be considered preferable.
+              The nose should always be black. Many coat colors are accepted. However, dogs with liver or black-and-tan coat, and dogs with more
+               than 80% white are discouraged.
+    </p>
+
+<div class="row featurette">
+    <div class="col-md-7">
+        <h3 lass="section-heading mb-4">Happy</h3>
+        <p>Born 26/04/2011 - his pedigree name is: Carmichael's Nice 'n Nasty.
+            In practice he seems to find a perfect balance between the Happy/Nice &Nasty & is a wonderful companion.
+            He succesfully completed: 4 Puppy & young adult training courses</p>
+    </div>
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" src="{{ url_for('static', filename='img/smiley_pose.jpg') }}" style="width:100%;" alt="Generic placeholder image">
+    </div>
+</div>
+<hr class="featurette-divider">
+<div class="row featurette">
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" src="http://www.carmichaels.nl/img/bg/start.png" style="width:100%;" alt="Generic placeholder image">
+    </div>
+    <div class="col-md-7">
+        <h3 lass="section-heading mb-4">Carmichael's Kennel</h3>
+        <p class="lead">The origin of Happy, where are the joy began. A great kennel that litterally breads love into puppies.</p>
+    </div>
+</div>
 {% endblock %}

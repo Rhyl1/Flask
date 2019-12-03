@@ -1,6 +1,7 @@
 {% extends 'base.html' %}    
 {% block content %}
 
+
     <h2 class="section-heading mb-4">
         <span class="section-heading-upper">{{ page_title }} Amstaff's</span>
         </h2>
@@ -15,26 +16,30 @@
               The nose should always be black. Many coat colors are accepted. However, dogs with liver or black-and-tan coat, and dogs with more
                than 80% white are discouraged.
     </p>
+         {% for verzorger in verzorgers %}
 
 <div class="row featurette">
+    {% if loop.index %2 !=0 %}
+
     <div class="col-md-7">
-        <h3 lass="section-heading mb-4">Happy</h3>
-        <p>Born 26/04/2011 - his pedigree name is: Carmichael's Nice 'n Nasty.
-            In practice he seems to find a perfect balance between the Happy/Nice &Nasty & is a wonderful companion.
-            He succesfully completed: 4 Puppy & young adult training courses</p>
+        <h3 lass="section-heading mb-4">{{ loop.index }} {{ verzorger.naam }}</h3>
+        <p>{{ verzorger.omschrijving }}</p>
     </div>
     <div class="col-md-5">
-        <img class="featurette-image img-responsive" src="{{ url_for('static', filename='img/smiley_pose.jpg') }}" style="width:100%;" alt="Generic placeholder image">
+        <img class="featurette-image img-responsive" src="{{ verzorger.imgage_source }}" style="width:100%;" alt="Generic placeholder image">
     </div>
+    {% else %}
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" src="{{ verzorger.imgage_source }}" style="width:100%;" alt="Generic placeholder image">
+    </div>
+    <div class="col-md-7">
+        <h3 lass="section-heading mb-4">{{ loop.index }} {{ verzorger.naam }}</h3>
+        <p>{{ verzorger.omschrijving }}</p>
+    </div>
+    {% endif %}
 </div>
+{% if loop.index !=3 %}
 <hr class="featurette-divider">
-<div class="row featurette">
-    <div class="col-md-5">
-        <img class="featurette-image img-responsive" src="http://www.carmichaels.nl/img/bg/start.png" style="width:100%;" alt="Generic placeholder image">
-    </div>
-    <div class="col-md-7">
-        <h3 lass="section-heading mb-4">Carmichael's Kennel</h3>
-        <p class="lead">The origin of Happy, where are the joy began. A great kennel that litterally breads love into puppies.</p>
-    </div>
-</div>
+{% endif %}
+        {% endfor %}
 {% endblock %}

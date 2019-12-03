@@ -1,0 +1,18 @@
+[
+    {
+        "naam" : "Happy",
+        "omschrijving": "Born 26/04/2011 - his pedigree name is Carmichael's Nice 'n Nasty. In practice he seems to find a perfect balance between the Happy/Nice &Nasty & is a wonderful companion. He succesfully completed 4 Puppy & young adult training courses",
+        "imgage_source": "static/img/smiley_pose.jpg"
+    },
+    { 
+        "naam" : "Carmichaels Kennel",
+        "omschrijving": "The origin of Happy, where are the joy began. A great kennel that litterally breads love into puppies.",
+        "imgage_source": "http://www.carmichaels.nl/img/bg/start.png"
+    },
+    {
+        "naam" : "Dierenkliniek Dacru",
+        "omschrijving": "With five vets, a specialist and seven assistants we enjoy working at these two modern locations and we are open here from Monday to Friday between 9 am and 8 pm for appointments, operations, examinations and the collection of food and medicines. On Saturdays we are open from 1 p.m. to 3 p.m. for appointments and collecting food, etc. at the Batau location.",
+        "imgage_source": "https://WEU-AZ-WEB-NL-CDNEP.azureedge.net/mediacontainer/medialibraries/dierenartsdacru/images/hero/hero_teamsamen2.jpg?ext=.jpg"
+    }
+    
+]
